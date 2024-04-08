@@ -3,7 +3,7 @@ import requests
 
 """Список HTTP методов"""
 class Http_methods():
-    headers = {"Content-Type:" "application/json"}
+    headers = {"Content-Type": "application/json"}
     cookie = ""
 
     @staticmethod
@@ -26,4 +26,3 @@ class Http_methods():
         result = requests.delete(url, json=body, headers=Http_methods.headers, cookies=Http_methods.cookie)
         return result
 
-    
