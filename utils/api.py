@@ -1,4 +1,5 @@
 
+from requests import Response
 from utils.http_methods import Http_methods
 
 """Методы для тестирования Google maps api"""
@@ -63,7 +64,6 @@ class Google_maps_api():
         return result_put
 
     """Метод для удаления новой локации"""
-
     @staticmethod
     def delete_new_place(place_id):
         delete_resources = "/maps/api/place/delete/json"  # Ресурс метода Delete
